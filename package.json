@@ -1,0 +1,32 @@
+{
+  "name": "trendscraper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "get": "phantomjs trending.js",
+    "agg": "node getalltrendings.js",
+    "calc": "node getalltrendings.js && node calculations.js",
+    "seed": "node db/seed.js",
+    "npm start": "node server.js"
+  },
+  "engines": {
+    "node": "7.9.0"
+  },
+  "keywords": [],
+  "author": "",
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "cheerio": "latest",
+    "express": "latest",
+    "pg": "^6.4.0",
+    "pg-hstore": "^2.3.2",
+    "request": "latest",
+    "sequelize": "^4.3.2"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "morgan": "^1.8.2"
+  }
+}

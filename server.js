@@ -1,11 +1,11 @@
 const express = require('express');
 const app = express();
-const morgan = require('morgan');
+// const morgan = require('morgan');
 const models = require('./db/models');
 const Trending = require('./db//models/trending');
 const Promise = require('bluebird');
 
-app.use(morgan('dev'));
+// app.use(morgan('dev'));
 
 app.use('/api', require('./api'));
 
